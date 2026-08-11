@@ -107,12 +107,14 @@ The monitoring cycle runs every **10 seconds**.
 
 ## Project Structure
 
+## Project Structure
+
+```text
 SysWatch-AI/
 │
 ├── agent/
 │   ├── main.py
 │   └── health_check.py
-│
 ├── collectors/
 │   ├── cpu.py
 │   ├── memory.py
@@ -122,25 +124,20 @@ SysWatch-AI/
 │   ├── services.py
 │   ├── users.py
 │   └── system_logs.py
-│
 ├── config/
 │   └── config.yaml
-│
 ├── database/
 │   └── database.py
-│
 ├── logger/
 │   └── logger.py
-│
 ├── utils/
 │   ├── colors.py
 │   └── formatter.py
-│
 ├── logs/
-│
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+
 
 
 ---
