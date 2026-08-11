@@ -1,0 +1,25 @@
+monitoring:
+  interval: 10
+
+thresholds:
+  cpu:
+    excellent: 20
+    normal: 50
+    moderate: 70
+    high: 85
+
+  ram:
+    excellent: 60
+    normal: 70
+    moderate: 80
+    high: 95
+
+  disk:
+    excellent: 70
+    normal: 85
+    high: 95
+
+services:
+  - ssh
+  - nginx
+  - cron
