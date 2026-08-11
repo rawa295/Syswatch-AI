@@ -107,7 +107,6 @@ The monitoring cycle runs every **10 seconds**.
 
 ## Project Structure
 
-```text
 SysWatch-AI/
 │
 ├── agent/
@@ -137,22 +136,12 @@ SysWatch-AI/
 │   ├── colors.py
 │   └── formatter.py
 │
-├── tests/
-│   ├── test_cpu.py
-│   ├── test_memory.py
-│   ├── test_disk.py
-│   ├── test_network.py
-│   ├── test_processes.py
-│   ├── test_services.py
-│   ├── test_users.py
-│   └── test_system_logs.py
-│
 ├── logs/
 │
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-```
+
 
 ---
 
@@ -322,34 +311,6 @@ View live service logs:
 ```bash
 sudo journalctl -u syswatch-ai -f
 ```
-
----
-
-## Testing
-
-The project includes tests for the main collectors.
-
-Examples:
-
-```bash
-python3 -m tests.test_users
-```
-
-```bash
-python3 -m tests.test_system_logs
-```
-
-The monitoring service was also tested under increased system resource usage to verify health-state transitions.
-
-Observed states:
-
-```text
-HEALTHY
-WARNING
-CRITICAL
-```
-
-The system successfully returned to `HEALTHY` after resource pressure was removed.
 
 ---
 
