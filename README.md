@@ -107,7 +107,7 @@ The monitoring cycle runs every **10 seconds**.
 
 ## Project Structure
 
-## Project Structure
+
 
 ```text
 SysWatch-AI/
